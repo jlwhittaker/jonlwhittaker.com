@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jon Whittaker</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="/img/menu.svg" alt="">
+        <nav>
+          <!--Home, about, projects, resume, contact, -->
+          <a href="">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="/resume">R&#233;sum&#233;</a>
+          <a style="cursor:pointer">Contact</a>
+        </nav>
+      </header>
+      <section class="banner" id="home">
+        <div class="section-wrapper">
+          <div class="headshot">
+            <img src="img/mr_henderson.jpg" alt="headshot">
+          </div>
+          <div class="personal">
+            <h1>Jon Whittaker</h1>
+            <h2>Software Developer | Builder | Tinkerer</h2>
+          </div>
+        </div>
+        
+      </section>
+      <section class="about" id="about">
+        <div class="section-wrapper">
+          <div class="about-desc">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, harum a. 
+              Minima placeat repudiandae quam nulla nesciunt soluta alias voluptatibus unde dolorum, 
+              laboriosam laborum, quo cupiditate quisquam ipsum consectetur iure.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Maiores porro laudantium accusantium ullam quam est unde rerum cupiditate expedita, 
+              sint id asperiores. Incidunt minima consectetur aut suscipit, corrupti explicabo. Rerum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, harum a. 
+              Minima placeat repudiandae quam nulla nesciunt soluta alias voluptatibus unde dolorum, 
+              laboriosam laborum, quo cupiditate quisquam ipsum consectetur iure.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Maiores porro laudantium accusantium ullam quam est unde rerum cupiditate expedita, 
+              sint id asperiores. Incidunt minima consectetur aut suscipit, corrupti explicabo. Rerum?</p>
+          </div>
+          <div class="about-skills">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div>
+                <p>Languages</p>
+                <ul class="skills-second-list">
+                  <li>Python</li>
+                  <li>C</li>
+                  <li>C#</li>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+              <div>
+                <p>Frameworks</p>
+                <ul class="skills-second-list">
+                <li>Django</li>
+                <li>Flask</li>
+                <li>.NET</li>
+                <li>NodeJS</li>
+                <li>Express.js</li>
+                <li>React</li>
+                <li>Sass</li>
+                </ul>
+              </div>
+              <div>
+                <p>Tools</p>
+                <ul class="skills-second-list">
+                  <li>Docker</li>
+                  <li>Apache</li>
+                  <li>Nginx</li>
+                  <li>Git</li>
+                  <li>Unix/Linux/POSIX</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="section-wrapper">
+          <div class="projects-wrapper">
+            <h2 class="projects-heading">Projects</h2>
+
+            <div class="project-card">
+              <h3 class="stockr-heading">Stockr</h3>
+              <p class="description">Inventory management made simple. You can keep track of what you've sold,
+                keep track of pending orders, and set automatic alerts to notify you when your stock gets low.
+              </p>
+              <div class="extra-details">
+                <div>
+                  <p>Intended Users</p>
+                <ul class="use-case">
+                  <li>Small retailers</li>
+                  <li>Etsy shop owners</li>
+                  <li>Entrepeneurs</li>
+                </ul>
+                <p>Tech used</p>
+                <ul class="tech-used">
+                  <li>C#</li>
+                  <li>.NET Core MVC</li>
+                </ul>
+                </div>
+              </div>
+              <div class="img-wrapper">
+                <img src="/img/stockr_small.png" alt="#">
+              </div>
+              <div class="buttons">
+                <button class="go-btn go-btn-stockr">See it in action</button>
+                <a target="_blank" href="https://github.com/jlwhittaker/stockr" class="see-code">See Code</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="stockr-heading">Feather-Weather</h3>
+              <p class="description">It's just the weather. Do you want to know what the low will be tonight?
+                Or if it's going to rain tomorrow? Or what the humidity is?
+                Get quick results right away, without all the clutter. Search by City or Zip code to get a 
+                dead-simple report and 7 day forecast.
+              </p>
+              <div class="extra-details">
+                <div>
+                  <p>Intended Users</p>
+                  <ul class="use-case">
+                    <li>Human beings who go outside</li>
+                  </ul>
+                  <p>Tech used</p>
+                  <ul class="tech-used">
+                    <li>NodeJS</li>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="img-wrapper">
+                <img src="/img/weather.png" alt="#">
+              </div>
+              <div class="buttons">
+                <button class="go-btn go-btn-weather">See it in action</button>
+                <a target="_blank" href="https://github.com/jlwhittaker/feather-weather" class="see-code">See Code</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3 class="stockr-heading">SmartJob</h3>
+              <p class="description">A Customer/Job tracker. Easy access to all of your customers, 
+                and all the work you've done for them. Create estimates, add new tasks, keep notes, etc.
+              </p>
+              <div class="extra-details">
+                <div>
+                  <p>Intended Users</p>
+                <ul class="use-case">
+                  <li>Electricians</li>
+                  <li>Plumbers</li>
+                  <li>Handymen</li>
+                </ul>
+                <p>Tech used</p>
+                <ul class="tech-used">
+                  <li>Python</li>
+                  <li>Django</li>
+                </ul>
+                </div>
+              </div>
+              <div class="img-wrapper">
+                <img src="/img/crm_small.png" alt="#">
+              </div>
+              <div class="buttons">
+                <button class="go-btn go-btn-crm">See it in action</button>
+                <a target="_blank" href="https://github.com/jlwhittaker/smartjob" class="see-code">See Code</a>
+              </div>
+            </div>
+
+      </section>
+      <section class="about-site" id="about-site">
+        <div class="section-wrapper">
+          <div class="content">
+            <h2>About This Site</h2>
+            <p>This site is (almost) completely self-hosted*, using an instance of Debian on a 
+              VPS from DigitalOcean. All of the projects shown above are being run inside their own Docker containers,
+              and being served as virtual hosts via Apache using mod_proxy.
+            </p>
+            <p class="footer-note">* The plan, one day soon, is to host from my own hardware in my house.
+            </p>
+          </div>
+      </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+    <div class="contact-modal close-modal">
+      <div class="contact-modal-content">
+        <form action="https://formspree.io/mvowdlna" method="POST">
+          <h3>Contact Me</h3>
+          <img src="/img/x.svg" class="close-modal" alt="X">
+          <label for="name" >Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="message" >Message</label>
+          <textarea name="message" id="message" rows="8" maxlength="1000" required></textarea>
+          <button>Send</button>
+        </form>
+      </div>
+      <div class="contact-sent-modal close-modal">
+        <h3>Message Sent</h3>
+        <p>Thanks for reaching out!</p>
+      </div>
+    </div>
+    <div class="app-modal close-app-modal">
+      <div class="stockr-modal-content app-modal-content ">
+        <h3>Stockr</h3>
+        <img src="/img/x.svg" class="close-app-modal" alt="X">
+        <h4>Here's how it works:</h4>
+        <p>Your inventory consists of items, called 'stocks'. Once you have items in stock,
+          there's a few things you can do:</p>
+          <ul>
+            <li>Place an order for more</li>
+            <li>Update an order status</li>
+            <li>Sell some of the stock</li>
+            <li>Set up an alert</li>
+          </ul>
+          <p>Updating an order status to 'Completed' will automatically update
+            the quantity that you have in stock. Same goes for selling an item.
+          </p>
+          <p>There are two types of alerts -- low stock, and out-of-stock.
+            When an alert gets triggered, you'll be able to see it on the dashboard. Clicking the
+            checkbox next to the alert notification will dismiss the alert. Any change to the item quantity 
+            (whether via an order or sale), will re-trigger any relevant alerts. Alerts can be turned on and 
+            off on the Alert page.
+          </p>
+          <p>Feel free to create your own user, but please don't use any credentials that you use for 
+            something else. The default login is:
+          </p>
+          <p class="credentials">Username: <span>"test"</span></p>
+          <p class="credentials">Password: <span>"pw"</span></p>
+          <p>Note: This page is open to the public, so it's possible that some unscrupulous
+            users may have added some ... questionable content to the default account. The database gets reset every day, though.
+          </p>
+          <div class="modal-button">
+            <a href="http://stockr.jonlwhittaker.com" target="_blank">Try it out</a>
+          </div>
+      </div>
+
+      <div class="weather-modal-content close-app-modal app-modal-content">
+        <h3>Feather-Weather</h3>
+        <img src="/img/x.svg" class="close-app-modal" alt="X">
+        <h4>Here's how it works:</h4>
+        <p>Search for weather.</p>
+        <p>Really, that's it. You can use a city name, zip code, abbrevations 
+          (like NYC, or XNA), or anything that a google maps search would recognize.
+        </p>
+        <p>The current report tells you what's going on outside, and each of the 7 day forecasts 
+          tells you a basic snapshot of each day.
+        </p>
+        <div class="modal-button">
+          <a href="http://weather.jonlwhittaker.com" target="_blank">Try it out</a>
+        </div>
+      </div>
+
+      <div class="crm-modal-content close-app-modal app-modal-content">
+        <h3>SmartJob</h3>
+        <img src="/img/x.svg" class="close-app-modal" alt="X">
+        <h4>Here's how it works:</h4>
+        <p>The main pieces of data are as follows:</p>
+        <ul>
+          <li>Customers</li>
+          <li>Estimates</li>
+          <li>Jobs</li>
+          <li>Invoices</li>
+          <li>Tasks</li>
+          <li>Notes</li>
+        </ul>
+        <p>Before you can do anything, you need a customer. Once you have a customer, you can 
+          create new estimates, jobs or invoices for them.
+        </p>
+        <p>Any estimate or job consists of contact information for the customer, 
+          a description of the job, and a list 
+          of tasks. Because tasks are treated as their own distinct models in the data, it's quite simple 
+          to turn an estimate into a job, and a job into an invoice. For example, when creating a job, you have 
+          the option of selecting from any estimates already associated with that customer (same goes for invoice/jobs).
+        </p>
+        <p>However, changing a task in a job won't change it in the estimate (same for invoices).</p>
+        <p>The intended workflow is: </p>
+        <ul>
+          <li>You get a new lead, a new customer calls your shop or finds you at a jobsite. (Create customer)</li>
+          <li>That new customer is looking for a quote on getting some work done. (Create estimate)</li>
+          <li>The customer approves the quote, or makes some changes, and is ready to move forward (Create job)</li>
+          <li>The job is complete, and you're ready to send an invoice to the customer (Create invoice)</li>
+        </ul>
+        <p>Feel free to create your own user, but please don't use any credentials that you use for 
+          something else. The default login is:
+        </p>
+        <p class="credentials">Username: <span>"test"</span></p>
+        <p class="credentials">Password: <span>"pw"</span></p>
+        <p>Note: This page is open to the public, so it's possible that some unscrupulous
+          users may have added some ... questionable content to the default account. The database gets reset every day, though.
+        </p>
+        <div class="modal-button">
+          <a href="http://crm.jonlwhittaker.com" target="_blank">Try it out</a>
+        </div>
+      </div>
+  </body>
+</html>
