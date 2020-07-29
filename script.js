@@ -69,4 +69,17 @@ window.onload = () => {
             }
         })
     });
+
+    // Show resume
+    document.getElementById("open-resume").addEventListener("click", (e) => {
+        document.querySelector(".resume").classList.add("active");
+    });
+    // Print resume
+    document.querySelector(".print-button").addEventListener("click", (e) => {
+        window.frames['resume-pdf'].print();
+    });
+    // Close resume
+    document.querySelector(".close-resume").addEventListener("click", (e) => {
+        document.querySelector(".resume").classList.remove("active");
+    });
 }

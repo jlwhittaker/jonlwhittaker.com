@@ -102,6 +102,8 @@ header {
             padding: .2rem 1rem;
             color: white;
             font-family: sans-serif;
+            cursor: pointer;
+
         }
 
     }
@@ -827,8 +829,69 @@ section {
                 font-size: 1.2rem;
             }
         }
+    }
+}
 
-        
+.resume {
+    &:not(.active) {
+        display: none;
+    }
+}
 
+.resume-pdf {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    @media only screen and (max-width: 440px) {
+        // top: 10%;
+    }
+}
+.print-button, .close-resume {
+    height: 5rem;
+    width: 5rem;
+    background: #fff;
+    position: fixed;
+    top: 5rem;
+    left: 5rem;
+    z-index: 100;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0.2rem black;
+
+    img {
+        height: 100%;
+    }
+
+    @media only screen and (max-width: 1300px) {
+        height: 3rem;
+        width: 3rem;
+        padding: 0;
+    }
+    @media only screen and (max-width: 800px) {
+        left: 2rem;
+        top: 3rem;
+    }
+    @media only screen and (max-width: 500px) {
+        height: 2rem;
+        width: 2rem;
+        left: 2rem;
+        top: 3rem;
+    }
+}
+
+.close-resume {
+    right: 3rem;
+    top: 4rem;
+    left: auto;
+    box-shadow: none;
+    padding: 0;
+    height: 2rem;
+    width: 2rem;
+
+    @media only screen and (max-width: 500px) {
+        top: 3rem;
+        right: 2rem;
     }
 }
