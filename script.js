@@ -40,14 +40,20 @@ window.onload = () => {
     document.querySelector(".go-btn-stockr").addEventListener("click", (e) => {
         document.querySelector(".app-modal").classList.add("active");
         document.querySelector(".stockr-modal-content").classList.add("active");
+        document.querySelector("body").classList.add("modal-open");
+
     });
     document.querySelector(".go-btn-weather").addEventListener("click", (e) => {
         document.querySelector(".app-modal").classList.add("active");
         document.querySelector(".weather-modal-content").classList.add("active");
+        document.querySelector("body").classList.add("modal-open");
+
     });
     document.querySelector(".go-btn-crm").addEventListener("click", (e) => {
         document.querySelector(".app-modal").classList.add("active");
         document.querySelector(".crm-modal-content").classList.add("active");
+        document.querySelector("body").classList.add("modal-open");
+
     });
 
     //Closing app modals
@@ -57,7 +63,9 @@ window.onload = () => {
                 document.querySelector(".app-modal").classList.remove("active");
                 document.querySelectorAll(".app-modal-content").forEach((elem) => {
                     elem.classList.remove("active");
-                })
+                });
+                document.querySelector("body").classList.remove("modal-open");
+
             }
         })
     });

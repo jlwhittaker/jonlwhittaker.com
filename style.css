@@ -523,6 +523,17 @@ section {
     padding: 4rem;
     padding-top: 2rem;
     padding-bottom: 3rem; }
+    @media only screen and (max-width: 700px) {
+      .app-modal .app-modal-content {
+        padding: 2rem; } }
+    @media only screen and (max-width: 500px) {
+      .app-modal .app-modal-content {
+        font-size: 1rem;
+        padding: 1.5rem; } }
+    @media only screen and (max-width: 400px) {
+      .app-modal .app-modal-content {
+        font-size: .9rem;
+        padding: 1.5rem; } }
     .app-modal .app-modal-content:not(.active) {
       display: none; }
     .app-modal .app-modal-content h3 {

@@ -763,6 +763,19 @@ section {
         padding-top: 2rem;
         padding-bottom: 3rem;
 
+        @media only screen and (max-width: 700px) {
+            padding: 2rem;
+        }
+
+        @media only screen and (max-width: 500px) {
+            font-size: 1rem;
+            padding: 1.5rem;
+        }
+        @media only screen and (max-width: 400px) {
+            font-size: .9rem;
+            padding: 1.5rem;
+        }
+
         &:not(.active) {
             display: none;
         }
