@@ -73,6 +73,7 @@ window.onload = () => {
     // Show resume
     document.getElementById("open-resume").addEventListener("click", (e) => {
         document.querySelector(".resume").classList.add("active");
+        document.querySelector("body").classList.add("modal-open");
     });
     // Print resume
     document.querySelector(".print-button").addEventListener("click", (e) => {
@@ -81,5 +82,7 @@ window.onload = () => {
     // Close resume
     document.querySelector(".close-resume").addEventListener("click", (e) => {
         document.querySelector(".resume").classList.remove("active");
+        document.querySelector("body").classList.remove("modal-open");
+
     });
 }

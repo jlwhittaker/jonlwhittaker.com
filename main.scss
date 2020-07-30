@@ -160,9 +160,11 @@ section {
             overflow: hidden;
             width: 180px;
             height: 180px;
+            // background-image: url("img/headshot.png");
 
             img {
-                transform: translateX(-.6rem);
+                width: 100%;
+                transform: translateX(0rem) scale(1.3);
             }
         }
 
@@ -217,7 +219,7 @@ section {
             padding: 2rem 3rem;
             column-gap: 3rem;
 
-            @media only screen and (max-width: 900px) {
+            @media only screen and (max-width: 1200px) {
                 flex-direction: column;
                 row-gap: 3rem;
             }
@@ -253,9 +255,14 @@ section {
             & .about-desc {
                 padding: 3rem 4rem;
                 p {
+                    font-size: 1rem;
                     font-family: sans-serif;
-                    line-height: 2.3;
+                    line-height: 1.6;
                     margin-bottom: 1.5rem;
+                }
+
+                span {
+                    text-decoration: line-through;
                 }
 
                 @media only screen and (max-width: 600px) {
@@ -268,6 +275,11 @@ section {
                 font-family: serif;
                 font-size: 1rem;
                 flex-basis: 40%;
+                align-self: start;
+
+                @media only screen and (max-width: 1200px) {
+                    align-self: stretch;
+                }
 
                 p {
                     text-decoration: underline;
@@ -285,17 +297,21 @@ section {
                 }
 
                 .skills {
+                    // height: 100%;
+                    // display: flex;
+                    // flex-direction: column;
+                    // justify-content: space-around;
 
                     div {
                         background-color: #eee;
-                        margin-bottom: 1rem;
+                        margin-bottom: 3rem;
                         box-shadow: 0 0 0.1rem gray;
                         padding: .5rem 1rem;
                     }
 
-                    @media only screen and (max-width: 900px) {
+                    @media only screen and (max-width: 1200px) {
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: space-evenly;
 
                         p {
                             text-align: center;
@@ -517,7 +533,7 @@ section {
 
                 @media only screen and (max-width: 400px) {
                     justify-content: space-between;
-                    button {
+                    button, a {
                         font-size: 1rem;
                     }
                 }
@@ -525,7 +541,7 @@ section {
                 @media only screen and (max-width: 500px) {
                     padding: 0;
 
-                    button {
+                    button, a {
                         font-size: 1rem;
                     }
                 }
@@ -839,7 +855,7 @@ section {
 }
 
 .resume-pdf {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
