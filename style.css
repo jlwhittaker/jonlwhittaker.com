@@ -227,7 +227,7 @@ section {
           transition: all .5s; }
           @media only screen and (min-width: 1201px) {
             section.about .section-wrapper .about-desc .extra-story {
-              height: auto !important; }
+              max-height: 2000px; }
               section.about .section-wrapper .about-desc .extra-story .cover {
                 display: none; } }
           section.about .section-wrapper .about-desc .extra-story.active {
