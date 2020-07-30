@@ -36,6 +36,12 @@ window.onload = () => {
         document.querySelector(".contact-sent-modal").classList.add("active");
     })
 
+    // 'Read my story' expansion
+    document.querySelector(".read-story").addEventListener("click", (e) => {
+        document.querySelector(".extra-story").classList.add("active");
+        document.querySelector(".read-story").classList.remove("active");
+    })
+
     // Show modals for each app
     document.querySelector(".go-btn-stockr").addEventListener("click", (e) => {
         document.querySelector(".app-modal").classList.add("active");
@@ -83,6 +89,5 @@ window.onload = () => {
     document.querySelector(".close-resume").addEventListener("click", (e) => {
         document.querySelector(".resume").classList.remove("active");
         document.querySelector("body").classList.remove("modal-open");
-
     });
 }

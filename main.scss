@@ -221,11 +221,13 @@ section {
 
             @media only screen and (max-width: 1200px) {
                 flex-direction: column;
+                grid-row-gap: 3rem;
                 row-gap: 3rem;
             }
 
             @media only screen and (max-width: 700px) {
                 padding: 1rem;
+                grid-row-gap: 1rem;
                 row-gap: 1rem;
             }
 
@@ -250,9 +252,12 @@ section {
                 padding: 1rem 2rem;
                 box-shadow: 0 0 0.1rem gray;
                 border-radius: 5px;
+                // margin-bottom: 1rem;
             }
 
             & .about-desc {
+                height: auto;
+                position: relative;
                 padding: 3rem 4rem;
                 p {
                     font-size: 1rem;
@@ -266,8 +271,66 @@ section {
                 }
 
                 @media only screen and (max-width: 600px) {
-                    font-size: .8rem;
                     padding: 1rem 2rem !important;
+                    p {
+                        font-size: .8rem !important;
+                    }
+                    
+                }
+                
+                .read-story {
+                    position: absolute;
+                    font-size: 1rem !important;
+                    font-family: sans-serif;
+                    font-weight: 400;
+                    color: darkblue;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    left: 0;
+                    margin: 0 auto;
+                    bottom: .5rem;
+                    z-index: 50;
+
+                    @media only screen and (min-width: 1201px) {
+                        display: none;
+                    }
+
+                    @media only screen and (min-width: 601px) {
+                        bottom: 2rem;
+                    }
+
+                    &:not(.active) {
+                        display: none;
+                    }
+                }
+
+                .extra-story {
+                    position: relative;
+                    max-height: 80px;
+                    overflow: hidden;
+                    transition: all .5s;
+                    @media only screen and (min-width: 1201px) {
+                        height: auto !important;
+                        .cover {
+                            display: none;
+                        }
+                    }
+                    &.active {
+                        max-height: 2000px;
+                        
+                        .cover {
+                            display: none;
+                        }
+                    }
+
+                    .cover {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-image: linear-gradient(to bottom, transparent, white 55%);
+                    }
                 }
             }
 
