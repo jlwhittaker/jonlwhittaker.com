@@ -152,10 +152,10 @@ section {
       margin: 0 auto;
       display: flex;
       padding: 2rem 3rem;
-      column-gap: 3rem; }
+      column-gap: 3rem;
+      flex-direction: column; }
       @media only screen and (max-width: 1200px) {
         section.about .section-wrapper {
-          flex-direction: column;
           grid-row-gap: 3rem;
           row-gap: 3rem; } }
       @media only screen and (max-width: 700px) {
@@ -212,9 +212,6 @@ section {
           bottom: .5rem;
           z-index: 50;
           cursor: pointer; }
-          @media only screen and (min-width: 1201px) {
-            section.about .section-wrapper .about-desc .read-story {
-              display: none; } }
           @media only screen and (min-width: 601px) {
             section.about .section-wrapper .about-desc .read-story {
               bottom: 2rem; } }
@@ -227,9 +224,7 @@ section {
           transition: all .5s; }
           @media only screen and (min-width: 1201px) {
             section.about .section-wrapper .about-desc .extra-story {
-              max-height: 2000px; }
-              section.about .section-wrapper .about-desc .extra-story .cover {
-                display: none; } }
+              max-height: 100px; } }
           section.about .section-wrapper .about-desc .extra-story.active {
             max-height: 2000px; }
             section.about .section-wrapper .about-desc .extra-story.active .cover {
@@ -243,12 +238,12 @@ section {
         font-family: serif;
         font-size: 1rem;
         flex-basis: 40%;
-        align-self: start; }
+        align-self: stretch;
+        padding: 3rem 4rem; }
         @media only screen and (max-width: 1200px) {
           section.about .section-wrapper .about-skills {
             align-self: stretch; } }
         section.about .section-wrapper .about-skills p {
-          text-decoration: underline;
           margin: .5rem;
           font-size: 1.4rem;
           font-family: sans-serif; }
@@ -257,23 +252,30 @@ section {
           list-style-type: '- ' !important; }
         section.about .section-wrapper .about-skills li {
           margin: .3rem; }
-        section.about .section-wrapper .about-skills .skills div {
-          background-color: #eee;
-          margin-bottom: 3rem;
-          box-shadow: 0 0 0.1rem gray;
-          padding: .5rem 1rem; }
-        @media only screen and (max-width: 1200px) {
-          section.about .section-wrapper .about-skills .skills {
-            display: flex;
-            justify-content: space-evenly; }
-            section.about .section-wrapper .about-skills .skills p {
-              text-align: center; } }
-        @media only screen and (max-width: 700px) {
-          section.about .section-wrapper .about-skills .skills {
-            flex-direction: column; }
-            section.about .section-wrapper .about-skills .skills ul {
-              display: grid;
-              grid-template-columns: 1fr 1fr; } }
+        section.about .section-wrapper .about-skills .skills {
+          display: flex;
+          justify-content: space-evenly; }
+          section.about .section-wrapper .about-skills .skills div {
+            background-color: #eee;
+            margin-bottom: 3rem;
+            box-shadow: 0 0 0.1rem gray;
+            padding: .5rem 1rem;
+            flex: 1; }
+            section.about .section-wrapper .about-skills .skills div:not(:last-child) {
+              margin-right: 1rem; }
+          section.about .section-wrapper .about-skills .skills p {
+            text-align: center;
+            border-bottom: 1px solid gray; }
+          @media only screen and (max-width: 1200px) {
+            section.about .section-wrapper .about-skills .skills {
+              display: flex;
+              justify-content: space-evenly; } }
+          @media only screen and (max-width: 700px) {
+            section.about .section-wrapper .about-skills .skills {
+              flex-direction: column; }
+              section.about .section-wrapper .about-skills .skills ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr; } }
   section.projects {
     background-color: #ADB5BD; }
     section.projects .section-wrapper {
@@ -286,7 +288,7 @@ section {
           row-gap: 1rem; } }
       section.projects .section-wrapper .projects-wrapper {
         background-color: white;
-        padding: 1rem 0;
+        padding: 3rem 4rem;
         box-shadow: 0 0 0.1rem gray;
         border-radius: 5px; }
       section.projects .section-wrapper h2 {

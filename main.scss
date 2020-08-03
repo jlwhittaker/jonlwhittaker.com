@@ -218,9 +218,9 @@ section {
             // padding: 0 1.5rem;
             padding: 2rem 3rem;
             column-gap: 3rem;
+            flex-direction: column;
 
             @media only screen and (max-width: 1200px) {
-                flex-direction: column;
                 grid-row-gap: 3rem;
                 row-gap: 3rem;
             }
@@ -295,7 +295,7 @@ section {
                     cursor: pointer;
 
                     @media only screen and (min-width: 1201px) {
-                        display: none;
+                        // display: none;
                     }
 
                     @media only screen and (min-width: 601px) {
@@ -312,10 +312,11 @@ section {
                     max-height: 80px;
                     overflow: hidden;
                     transition: all .5s;
+
                     @media only screen and (min-width: 1201px) {
-                        max-height: 2000px;
+                        max-height: 100px;
                         .cover {
-                            display: none;
+                            // display: none;
                         }
                     }
                     &.active {
@@ -339,14 +340,16 @@ section {
                 font-family: serif;
                 font-size: 1rem;
                 flex-basis: 40%;
-                align-self: start;
+                align-self: stretch;
+                padding: 3rem 4rem;
+
 
                 @media only screen and (max-width: 1200px) {
                     align-self: stretch;
                 }
 
                 p {
-                    text-decoration: underline;
+                    // text-decoration: underline;
                     margin: .5rem;
                     font-size: 1.4rem;
                     font-family: sans-serif;
@@ -362,24 +365,32 @@ section {
 
                 .skills {
                     // height: 100%;
-                    // display: flex;
+                    display: flex;
                     // flex-direction: column;
-                    // justify-content: space-around;
+                    justify-content: space-evenly;
 
                     div {
                         background-color: #eee;
                         margin-bottom: 3rem;
                         box-shadow: 0 0 0.1rem gray;
                         padding: .5rem 1rem;
+                        flex: 1;
+                        // width: 25%;
+                        &:not(:last-child) {
+                            margin-right: 1rem;
+                        }
+                    }
+
+                    p {
+                        text-align: center;
+                        border-bottom: 1px solid gray;
                     }
 
                     @media only screen and (max-width: 1200px) {
                         display: flex;
                         justify-content: space-evenly;
 
-                        p {
-                            text-align: center;
-                        }
+                        
                     }
 
                     @media only screen and (max-width: 700px) {
@@ -415,7 +426,7 @@ section {
 
             .projects-wrapper {
                 background-color: white;
-                padding: 1rem 0;
+                padding: 3rem 4rem;
                 box-shadow: 0 0 0.1rem gray;
                 border-radius: 5px;
             }
