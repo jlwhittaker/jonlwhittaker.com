@@ -210,7 +210,6 @@ section {
           left: 0;
           margin: 0 auto;
           bottom: .5rem;
-          z-index: 50;
           cursor: pointer; }
           @media only screen and (min-width: 601px) {
             section.about .section-wrapper .about-desc .read-story {
