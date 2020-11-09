@@ -181,6 +181,9 @@ section {
         box-shadow: 0 0 0.1rem gray;
         border-radius: 5px;
         margin-bottom: 1rem; }
+        @media only screen and (max-width: 600px) {
+          section.about .section-wrapper > div {
+            padding: 1rem 2rem !important; } }
       section.about .section-wrapper .about-desc {
         height: auto;
         position: relative;
@@ -210,6 +213,7 @@ section {
           left: 0;
           margin: 0 auto;
           bottom: .5rem;
+          z-index: 50;
           cursor: pointer; }
           @media only screen and (min-width: 601px) {
             section.about .section-wrapper .about-desc .read-story {
@@ -247,7 +251,6 @@ section {
           font-size: 1.4rem;
           font-family: sans-serif; }
         section.about .section-wrapper .about-skills ul {
-          padding-left: 2rem;
           list-style-type: '- ' !important; }
         section.about .section-wrapper .about-skills li {
           margin: .3rem; }
@@ -260,8 +263,6 @@ section {
             box-shadow: 0 0 0.1rem gray;
             padding: .5rem 1rem;
             flex: 1; }
-            section.about .section-wrapper .about-skills .skills div:not(:last-child) {
-              margin-right: 1rem; }
           section.about .section-wrapper .about-skills .skills p {
             text-align: center;
             border-bottom: 1px solid gray; }
@@ -274,7 +275,8 @@ section {
               flex-direction: column; }
               section.about .section-wrapper .about-skills .skills ul {
                 display: grid;
-                grid-template-columns: 1fr 1fr; } }
+                grid-template-columns: 1fr 1fr;
+                justify-content: center; } }
   section.projects {
     background-color: #ADB5BD; }
     section.projects .section-wrapper {
@@ -290,6 +292,16 @@ section {
         padding: 3rem 4rem;
         box-shadow: 0 0 0.1rem gray;
         border-radius: 5px; }
+        @media only screen and (max-width: 600px) {
+          section.projects .section-wrapper .projects-wrapper {
+            padding: 1rem 2rem !important; }
+            section.projects .section-wrapper .projects-wrapper p {
+              font-size: .8rem !important; } }
+        @media only screen and (max-width: 440px) {
+          section.projects .section-wrapper .projects-wrapper {
+            padding: 1rem .5rem !important; }
+            section.projects .section-wrapper .projects-wrapper p {
+              font-size: .8rem !important; } }
       section.projects .section-wrapper h2 {
         font-family: serif;
         font-weight: 400;
@@ -408,16 +420,16 @@ section {
           box-shadow: 0 0.1rem 0.2rem gray; }
           section.projects .project-card .buttons button.see-code, section.projects .project-card .buttons a.see-code {
             background-color: #3f88c5; }
+        @media only screen and (max-width: 550px) {
+          section.projects .project-card .buttons {
+            padding: 0; }
+            section.projects .project-card .buttons button, section.projects .project-card .buttons a {
+              font-size: .9rem; } }
         @media only screen and (max-width: 400px) {
           section.projects .project-card .buttons {
             justify-content: space-between; }
             section.projects .project-card .buttons button, section.projects .project-card .buttons a {
-              font-size: 1rem; } }
-        @media only screen and (max-width: 500px) {
-          section.projects .project-card .buttons {
-            padding: 0; }
-            section.projects .project-card .buttons button, section.projects .project-card .buttons a {
-              font-size: 1rem; } }
+              font-size: .8rem; } }
       section.projects .project-card .details {
         display: flex;
         flex-direction: column;

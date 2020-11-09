@@ -253,6 +253,14 @@ section {
                 box-shadow: 0 0 0.1rem gray;
                 border-radius: 5px;
                 margin-bottom: 1rem;
+
+                @media only screen and (max-width: 600px) {
+                    padding: 1rem 2rem !important;
+                    p {
+                        // font-size: .8rem !important;
+                    }
+                    
+                }
             }
 
             & .about-desc {
@@ -291,7 +299,7 @@ section {
                     left: 0;
                     margin: 0 auto;
                     bottom: .5rem;
-                    // z-index: 50;
+                    z-index: 50;
                     cursor: pointer;
 
                     @media only screen and (min-width: 1201px) {
@@ -355,7 +363,7 @@ section {
                     font-family: sans-serif;
                 }
                 ul {
-                    padding-left: 2rem;
+                    // padding-left: 2rem;
                     list-style-type: '- ' !important;
                 }
 
@@ -377,7 +385,7 @@ section {
                         flex: 1;
                         // width: 25%;
                         &:not(:last-child) {
-                            margin-right: 1rem;
+                            // margin-right: 1rem;
                         }
                     }
 
@@ -399,6 +407,7 @@ section {
                         ul {
                             display: grid;
                             grid-template-columns: 1fr 1fr;
+                            justify-content: center;
                         }
                     }
                 }
@@ -429,6 +438,22 @@ section {
                 padding: 3rem 4rem;
                 box-shadow: 0 0 0.1rem gray;
                 border-radius: 5px;
+
+                @media only screen and (max-width: 600px) {
+                    padding: 1rem 2rem !important;
+                    p {
+                        font-size: .8rem !important;
+                    }
+                    
+                }
+
+                @media only screen and (max-width: 440px) {
+                    padding: 1rem .5rem !important;
+                    p {
+                        font-size: .8rem !important;
+                    }
+                    
+                }
             }
 
             h2 {
@@ -606,18 +631,20 @@ section {
                     }
                 }
 
-                @media only screen and (max-width: 400px) {
-                    justify-content: space-between;
-                    button, a {
-                        font-size: 1rem;
-                    }
-                }
+                
 
-                @media only screen and (max-width: 500px) {
+                @media only screen and (max-width: 550px) {
                     padding: 0;
 
                     button, a {
-                        font-size: 1rem;
+                        font-size: .9rem;
+                    }
+                }
+
+                @media only screen and (max-width: 400px) {
+                    justify-content: space-between;
+                    button, a {
+                        font-size: .8rem;
                     }
                 }
             }
